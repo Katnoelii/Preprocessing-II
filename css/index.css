@@ -173,13 +173,17 @@ img {
   margin: 1.5% auto;
   display: flex;
 }
-h1 {
+.title-link h1 {
   margin: auto 25%;
 }
-nav {
+.title-link nav {
   margin: auto;
   margin-right: 25%;
   font-size: 1.8rem;
+}
+.title-link nav a {
+  text-decoration: none;
+  color: #212529;
 }
 .footer {
   width: 100%;
