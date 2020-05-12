@@ -1,3 +1,21 @@
+header{
+  .image{
+    border-top: 2px dashed @navigation-border;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    h2{
+      margin:1% 24%;
+    }//This marks the end of h2
+    img{
+      margin:auto 24%;
+    }//This marks the end of img
+    p{
+      margin:auto 24%;
+      border-bottom: 2px dashed @navigation-border;
+    }//This marks the end of p
+  }//This marks the end of .image
+}//This marks the end of header
 .home {
 
   .content-section {
@@ -11,7 +29,7 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
-    }
+    }//This marks the end of .text-content
 
     .img-content {
       width: 48%;
@@ -19,9 +37,9 @@
 
       img {
         border-radius: 10px;
-      }
-    }
-  }
+      }//This marks the end of img
+    }//This marks the end of the .img-content
+  }//This marks the end of the .content-section
 
   .inverse-content {
     padding-bottom: 30px;
@@ -30,13 +48,13 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
-    }
+    }//This marks the end of .text-content
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
-    }
-  }
+    }//This marks the end of .img-content
+  }//This marks the end of .inverse-content
 
   .content-destination {
     width: 75%;
@@ -44,8 +62,8 @@
 
     img {
       border-radius: 10px;
-    }
-  }
+    }//This marks the end of img
+  }//This marks the end of .content-destination
 
   .content-pick {
     padding-top: 30px;
@@ -56,6 +74,11 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      .btn{
+        a{
+        .button();
+      }
     }
-  }
+    }//This marks the end of destination
+  }//This marks the end of .content-pick
 }// home
