@@ -276,10 +276,7 @@ header .image p {
     flex-flow: row wrap;
     justify-content: center;
   }
-  header img {
-    width: 80%;
-  }
   header h1 {
-    justify-content: left;
+    justify-content: center;
   }
 }
