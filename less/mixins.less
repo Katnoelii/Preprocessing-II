@@ -1,14 +1,8 @@
 // Mixins in here
-.button(@width:150px, @font-color:white){
-    display:block;
-    text-decoration:none;
-    background-color:teal;
-    padding:1rem;
-    color:@font-color;
+.button(@width:150px){
     border-radius:10px;
-    font-size:1.5rem;
     width:@width;
     margin:auto;
-    cursor:pointer;
-
+    background-color:@button-bg;
+    padding:1rem;
 }
