@@ -1,4 +1,9 @@
 header{
+  @media @mobile{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+  }
   .image{
     border-top: 2px dashed @navigation-border;
     display:flex;
@@ -6,6 +11,9 @@ header{
     justify-content: center;
     h2{
       margin:1% 24%;
+      @media @mobile{
+        width:100%;
+      }
     }//This marks the end of h2
     img{
       margin:auto 24%;
@@ -28,11 +36,20 @@ header{
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile{
+        width:100%;
+        text-align: center;
+      }
     }//This marks the end of .text-content
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile{
+        display:flex;
+        justify-content: center;
+        width:100%;
+      }
 
       img {
         border-radius: 10px;
@@ -43,6 +60,10 @@ header{
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile{
+      display:flex;
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -62,6 +83,9 @@ header{
     img {
       border-radius: 10px;
     }//This marks the end of img
+    @media @mobile{
+      width:90%;
+    }
   }//This marks the end of .content-destination
 
   .content-pick {
@@ -69,33 +93,30 @@ header{
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
+    @media @mobile{
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+    }
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile{
+        width:80%;
+        margin:30px auto;
+        font-size: 2rem;
+      }
       .btn{
           .button();
+          @media @mobile{
+            width:100%;
+          }
           a{
             text-decoration: none;
             color:white;
             font-size:1.6rem;
+
           }
         }
     }//This marks the end of destination
   }//This marks the end of .content-pick
-
-  @media @mobile{
-    header{
-      .title-link{
-        display:flex;
-        flex-flow:row wrap;
-        justify-content: center;
-      }//this marks the end of .title-link
-      h1{
-        justify-content:center;
-      }
-    }//this marks the end of header
-  .container .home{
-    
-  } 
-}//this marks the end of this media
